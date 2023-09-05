@@ -35,7 +35,7 @@ class TenorResult extends Equatable {
       'hasCaption': hasCaption,
       'id': id,
       'itemurl': itemurl,
-      'media': media?.toMap(),
+      'media_formats': media?.toMap(),
       'shares': shares,
       'title': title,
       'url': url,
@@ -98,6 +98,7 @@ class TenorResult extends Equatable {
       }
       return null;
     }
+    return null;
   }
 
   String toJson() => json.encode(toMap());
